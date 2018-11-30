@@ -1,0 +1,2 @@
+The water dropper uses the same board as the chronograph project. Do not install R2 to use the water dropper.
+R3 is not needed for the water dropper but will not effect the circuit should you want to use the chronograph.
