@@ -546,164 +546,164 @@ unsigned long microToMilli(unsigned long num)
      446:	ef cf       	rjmp	.-34     	; 0x426 <_Z9clearCharPcss+0x2>
      448:	08 95       	ret
 
-0000044a <_Z12charToStringPcs>:
-     44a:	9f 92       	push	r9
-     44c:	af 92       	push	r10
-     44e:	bf 92       	push	r11
-     450:	cf 92       	push	r12
-     452:	df 92       	push	r13
-     454:	ef 92       	push	r14
-     456:	ff 92       	push	r15
-     458:	0f 93       	push	r16
-     45a:	1f 93       	push	r17
-     45c:	cf 93       	push	r28
-     45e:	df 93       	push	r29
-     460:	00 d0       	rcall	.+0      	; 0x462 <_Z12charToStringPcs+0x18>
-     462:	00 d0       	rcall	.+0      	; 0x464 <_Z12charToStringPcs+0x1a>
-     464:	00 d0       	rcall	.+0      	; 0x466 <_Z12charToStringPcs+0x1c>
-     466:	cd b7       	in	r28, 0x3d	; 61
-     468:	de b7       	in	r29, 0x3e	; 62
-     46a:	8c 01       	movw	r16, r24
-     46c:	6b 01       	movw	r12, r22
-     46e:	5a 01       	movw	r10, r20
-     470:	67 e0       	ldi	r22, 0x07	; 7
-     472:	72 e0       	ldi	r23, 0x02	; 2
-     474:	0e 94 92 13 	call	0x2724	; 0x2724 <_ZN6StringC1EPKc>
-     478:	76 01       	movw	r14, r12
-     47a:	c7 01       	movw	r24, r14
-     47c:	8c 19       	sub	r24, r12
-     47e:	9d 09       	sbc	r25, r13
-     480:	8a 15       	cp	r24, r10
-     482:	9b 05       	cpc	r25, r11
-     484:	b4 f4       	brge	.+44     	; 0x4b2 <_Z12charToStringPcs+0x68>
-     486:	f7 01       	movw	r30, r14
-     488:	91 90       	ld	r9, Z+
-     48a:	7f 01       	movw	r14, r30
-     48c:	b8 01       	movw	r22, r16
-     48e:	ce 01       	movw	r24, r28
-     490:	01 96       	adiw	r24, 0x01	; 1
-     492:	0e 94 fb 13 	call	0x27f6	; 0x27f6 <_ZN6StringC1ERKS_>
-     496:	69 2d       	mov	r22, r9
-     498:	ce 01       	movw	r24, r28
-     49a:	01 96       	adiw	r24, 0x01	; 1
-     49c:	0e 94 51 14 	call	0x28a2	; 0x28a2 <_ZplRK15StringSumHelperc>
-     4a0:	bc 01       	movw	r22, r24
-     4a2:	c8 01       	movw	r24, r16
-     4a4:	0e 94 e4 13 	call	0x27c8	; 0x27c8 <_ZN6StringaSERKS_>
-     4a8:	ce 01       	movw	r24, r28
-     4aa:	01 96       	adiw	r24, 0x01	; 1
-     4ac:	0e 94 24 13 	call	0x2648	; 0x2648 <_ZN6StringD1Ev>
-     4b0:	e4 cf       	rjmp	.-56     	; 0x47a <_Z12charToStringPcs+0x30>
-     4b2:	c8 01       	movw	r24, r16
-     4b4:	26 96       	adiw	r28, 0x06	; 6
-     4b6:	0f b6       	in	r0, 0x3f	; 63
-     4b8:	f8 94       	cli
-     4ba:	de bf       	out	0x3e, r29	; 62
-     4bc:	0f be       	out	0x3f, r0	; 63
-     4be:	cd bf       	out	0x3d, r28	; 61
-     4c0:	df 91       	pop	r29
-     4c2:	cf 91       	pop	r28
-     4c4:	1f 91       	pop	r17
-     4c6:	0f 91       	pop	r16
-     4c8:	ff 90       	pop	r15
-     4ca:	ef 90       	pop	r14
-     4cc:	df 90       	pop	r13
-     4ce:	cf 90       	pop	r12
-     4d0:	bf 90       	pop	r11
-     4d2:	af 90       	pop	r10
-     4d4:	9f 90       	pop	r9
-     4d6:	08 95       	ret
+0000044a <_Z5emptyPcs>:
+     44a:	fc 01       	movw	r30, r24
+     44c:	20 e2       	ldi	r18, 0x20	; 32
+     44e:	af 01       	movw	r20, r30
+     450:	48 1b       	sub	r20, r24
+     452:	59 0b       	sbc	r21, r25
+     454:	46 17       	cp	r20, r22
+     456:	57 07       	cpc	r21, r23
+     458:	14 f4       	brge	.+4      	; 0x45e <_Z5emptyPcs+0x14>
+     45a:	21 93       	st	Z+, r18
+     45c:	f8 cf       	rjmp	.-16     	; 0x44e <_Z5emptyPcs+0x4>
+     45e:	08 95       	ret
 
-000004d8 <_Z5emptyPcs>:
-     4d8:	fc 01       	movw	r30, r24
-     4da:	20 e2       	ldi	r18, 0x20	; 32
-     4dc:	af 01       	movw	r20, r30
-     4de:	48 1b       	sub	r20, r24
-     4e0:	59 0b       	sbc	r21, r25
-     4e2:	46 17       	cp	r20, r22
-     4e4:	57 07       	cpc	r21, r23
-     4e6:	14 f4       	brge	.+4      	; 0x4ec <_Z5emptyPcs+0x14>
-     4e8:	21 93       	st	Z+, r18
-     4ea:	f8 cf       	rjmp	.-16     	; 0x4dc <_Z5emptyPcs+0x4>
-     4ec:	08 95       	ret
+00000460 <setup>:
+     460:	60 e0       	ldi	r22, 0x00	; 0
+     462:	88 e0       	ldi	r24, 0x08	; 8
+     464:	0e 94 8f 12 	call	0x251e	; 0x251e <pinMode>
+     468:	61 e0       	ldi	r22, 0x01	; 1
+     46a:	8d e0       	ldi	r24, 0x0D	; 13
+     46c:	0e 94 8f 12 	call	0x251e	; 0x251e <pinMode>
+     470:	38 9a       	sbi	0x07, 0	; 7
+     472:	8b e5       	ldi	r24, 0x5B	; 91
+     474:	92 e0       	ldi	r25, 0x02	; 2
+     476:	0e 94 64 14 	call	0x28c8	; 0x28c8 <_ZN6IRrecv10enableIRInEv>
+     47a:	20 e0       	ldi	r18, 0x00	; 0
+     47c:	42 e0       	ldi	r20, 0x02	; 2
+     47e:	60 e1       	ldi	r22, 0x10	; 16
+     480:	80 e2       	ldi	r24, 0x20	; 32
+     482:	92 e0       	ldi	r25, 0x02	; 2
+     484:	0e 94 b6 20 	call	0x416c	; 0x416c <_ZN13LiquidCrystal5beginEhhh>
+     488:	80 e2       	ldi	r24, 0x20	; 32
+     48a:	92 e0       	ldi	r25, 0x02	; 2
+     48c:	0e 94 94 20 	call	0x4128	; 0x4128 <_ZN13LiquidCrystal4homeEv>
+     490:	68 e0       	ldi	r22, 0x08	; 8
+     492:	71 e0       	ldi	r23, 0x01	; 1
+     494:	80 e2       	ldi	r24, 0x20	; 32
+     496:	92 e0       	ldi	r25, 0x02	; 2
+     498:	0e 94 81 10 	call	0x2102	; 0x2102 <_ZN5Print5printEPKc>
+     49c:	41 e0       	ldi	r20, 0x01	; 1
+     49e:	60 e0       	ldi	r22, 0x00	; 0
+     4a0:	80 e2       	ldi	r24, 0x20	; 32
+     4a2:	92 e0       	ldi	r25, 0x02	; 2
+     4a4:	0e 94 9b 20 	call	0x4136	; 0x4136 <_ZN13LiquidCrystal9setCursorEhh>
+     4a8:	66 e1       	ldi	r22, 0x16	; 22
+     4aa:	71 e0       	ldi	r23, 0x01	; 1
+     4ac:	80 e2       	ldi	r24, 0x20	; 32
+     4ae:	92 e0       	ldi	r25, 0x02	; 2
+     4b0:	0e 94 81 10 	call	0x2102	; 0x2102 <_ZN5Print5printEPKc>
+     4b4:	68 e8       	ldi	r22, 0x88	; 136
+     4b6:	73 e1       	ldi	r23, 0x13	; 19
+     4b8:	80 e0       	ldi	r24, 0x00	; 0
+     4ba:	90 e0       	ldi	r25, 0x00	; 0
+     4bc:	0e 94 e4 11 	call	0x23c8	; 0x23c8 <delay>
+     4c0:	64 e0       	ldi	r22, 0x04	; 4
+     4c2:	70 e0       	ldi	r23, 0x00	; 0
+     4c4:	88 e4       	ldi	r24, 0x48	; 72
+     4c6:	92 e0       	ldi	r25, 0x02	; 2
+     4c8:	0e 94 25 02 	call	0x44a	; 0x44a <_Z5emptyPcs>
+     4cc:	64 e0       	ldi	r22, 0x04	; 4
+     4ce:	70 e0       	ldi	r23, 0x00	; 0
+     4d0:	84 e4       	ldi	r24, 0x44	; 68
+     4d2:	92 e0       	ldi	r25, 0x02	; 2
+     4d4:	0e 94 25 02 	call	0x44a	; 0x44a <_Z5emptyPcs>
+     4d8:	64 e0       	ldi	r22, 0x04	; 4
+     4da:	70 e0       	ldi	r23, 0x00	; 0
+     4dc:	80 e4       	ldi	r24, 0x40	; 64
+     4de:	92 e0       	ldi	r25, 0x02	; 2
+     4e0:	0e 94 25 02 	call	0x44a	; 0x44a <_Z5emptyPcs>
+     4e4:	64 e0       	ldi	r22, 0x04	; 4
+     4e6:	70 e0       	ldi	r23, 0x00	; 0
+     4e8:	8c e3       	ldi	r24, 0x3C	; 60
+     4ea:	92 e0       	ldi	r25, 0x02	; 2
+     4ec:	0e 94 25 02 	call	0x44a	; 0x44a <_Z5emptyPcs>
+     4f0:	e4 e4       	ldi	r30, 0x44	; 68
+     4f2:	f2 e0       	ldi	r31, 0x02	; 2
+     4f4:	91 e3       	ldi	r25, 0x31	; 49
+     4f6:	91 83       	std	Z+1, r25	; 0x01
+     4f8:	80 e3       	ldi	r24, 0x30	; 48
+     4fa:	82 83       	std	Z+2, r24	; 0x02
+     4fc:	83 83       	std	Z+3, r24	; 0x03
+     4fe:	90 93 43 02 	sts	0x0243, r25	; 0x800243 <lcdIn2+0x3>
+     502:	80 93 3f 02 	sts	0x023F, r24	; 0x80023f <lcdIn3+0x3>
+     506:	26 e0       	ldi	r18, 0x06	; 6
+     508:	40 e8       	ldi	r20, 0x80	; 128
+     50a:	55 e2       	ldi	r21, 0x25	; 37
+     50c:	60 e0       	ldi	r22, 0x00	; 0
+     50e:	70 e0       	ldi	r23, 0x00	; 0
+     510:	8c e6       	ldi	r24, 0x6C	; 108
+     512:	92 e0       	ldi	r25, 0x02	; 2
+     514:	0c 94 2c 0f 	jmp	0x1e58	; 0x1e58 <_ZN14HardwareSerial5beginEmh>
 
-000004ee <setup>:
-     4ee:	60 e0       	ldi	r22, 0x00	; 0
-     4f0:	88 e0       	ldi	r24, 0x08	; 8
-     4f2:	0e 94 8f 12 	call	0x251e	; 0x251e <pinMode>
-     4f6:	61 e0       	ldi	r22, 0x01	; 1
-     4f8:	8d e0       	ldi	r24, 0x0D	; 13
-     4fa:	0e 94 8f 12 	call	0x251e	; 0x251e <pinMode>
-     4fe:	38 9a       	sbi	0x07, 0	; 7
-     500:	8b e5       	ldi	r24, 0x5B	; 91
-     502:	92 e0       	ldi	r25, 0x02	; 2
-     504:	0e 94 64 14 	call	0x28c8	; 0x28c8 <_ZN6IRrecv10enableIRInEv>
-     508:	20 e0       	ldi	r18, 0x00	; 0
-     50a:	42 e0       	ldi	r20, 0x02	; 2
-     50c:	60 e1       	ldi	r22, 0x10	; 16
-     50e:	80 e2       	ldi	r24, 0x20	; 32
-     510:	92 e0       	ldi	r25, 0x02	; 2
-     512:	0e 94 b6 20 	call	0x416c	; 0x416c <_ZN13LiquidCrystal5beginEhhh>
-     516:	80 e2       	ldi	r24, 0x20	; 32
-     518:	92 e0       	ldi	r25, 0x02	; 2
-     51a:	0e 94 94 20 	call	0x4128	; 0x4128 <_ZN13LiquidCrystal4homeEv>
-     51e:	68 e0       	ldi	r22, 0x08	; 8
-     520:	71 e0       	ldi	r23, 0x01	; 1
-     522:	80 e2       	ldi	r24, 0x20	; 32
-     524:	92 e0       	ldi	r25, 0x02	; 2
-     526:	0e 94 81 10 	call	0x2102	; 0x2102 <_ZN5Print5printEPKc>
-     52a:	41 e0       	ldi	r20, 0x01	; 1
-     52c:	60 e0       	ldi	r22, 0x00	; 0
-     52e:	80 e2       	ldi	r24, 0x20	; 32
-     530:	92 e0       	ldi	r25, 0x02	; 2
-     532:	0e 94 9b 20 	call	0x4136	; 0x4136 <_ZN13LiquidCrystal9setCursorEhh>
-     536:	66 e1       	ldi	r22, 0x16	; 22
-     538:	71 e0       	ldi	r23, 0x01	; 1
-     53a:	80 e2       	ldi	r24, 0x20	; 32
-     53c:	92 e0       	ldi	r25, 0x02	; 2
-     53e:	0e 94 81 10 	call	0x2102	; 0x2102 <_ZN5Print5printEPKc>
-     542:	68 e8       	ldi	r22, 0x88	; 136
-     544:	73 e1       	ldi	r23, 0x13	; 19
-     546:	80 e0       	ldi	r24, 0x00	; 0
-     548:	90 e0       	ldi	r25, 0x00	; 0
-     54a:	0e 94 e4 11 	call	0x23c8	; 0x23c8 <delay>
-     54e:	64 e0       	ldi	r22, 0x04	; 4
-     550:	70 e0       	ldi	r23, 0x00	; 0
-     552:	88 e4       	ldi	r24, 0x48	; 72
-     554:	92 e0       	ldi	r25, 0x02	; 2
-     556:	0e 94 6c 02 	call	0x4d8	; 0x4d8 <_Z5emptyPcs>
-     55a:	64 e0       	ldi	r22, 0x04	; 4
-     55c:	70 e0       	ldi	r23, 0x00	; 0
-     55e:	84 e4       	ldi	r24, 0x44	; 68
-     560:	92 e0       	ldi	r25, 0x02	; 2
-     562:	0e 94 6c 02 	call	0x4d8	; 0x4d8 <_Z5emptyPcs>
-     566:	64 e0       	ldi	r22, 0x04	; 4
-     568:	70 e0       	ldi	r23, 0x00	; 0
-     56a:	80 e4       	ldi	r24, 0x40	; 64
-     56c:	92 e0       	ldi	r25, 0x02	; 2
-     56e:	0e 94 6c 02 	call	0x4d8	; 0x4d8 <_Z5emptyPcs>
-     572:	64 e0       	ldi	r22, 0x04	; 4
-     574:	70 e0       	ldi	r23, 0x00	; 0
-     576:	8c e3       	ldi	r24, 0x3C	; 60
-     578:	92 e0       	ldi	r25, 0x02	; 2
-     57a:	0e 94 6c 02 	call	0x4d8	; 0x4d8 <_Z5emptyPcs>
-     57e:	e4 e4       	ldi	r30, 0x44	; 68
-     580:	f2 e0       	ldi	r31, 0x02	; 2
-     582:	91 e3       	ldi	r25, 0x31	; 49
-     584:	91 83       	std	Z+1, r25	; 0x01
-     586:	80 e3       	ldi	r24, 0x30	; 48
-     588:	82 83       	std	Z+2, r24	; 0x02
-     58a:	83 83       	std	Z+3, r24	; 0x03
-     58c:	90 93 43 02 	sts	0x0243, r25	; 0x800243 <lcdIn2+0x3>
-     590:	80 93 3f 02 	sts	0x023F, r24	; 0x80023f <lcdIn3+0x3>
-     594:	26 e0       	ldi	r18, 0x06	; 6
-     596:	40 e8       	ldi	r20, 0x80	; 128
-     598:	55 e2       	ldi	r21, 0x25	; 37
-     59a:	60 e0       	ldi	r22, 0x00	; 0
-     59c:	70 e0       	ldi	r23, 0x00	; 0
-     59e:	8c e6       	ldi	r24, 0x6C	; 108
-     5a0:	92 e0       	ldi	r25, 0x02	; 2
-     5a2:	0c 94 2c 0f 	jmp	0x1e58	; 0x1e58 <_ZN14HardwareSerial5beginEmh>
+00000518 <_Z12charToStringPcs>:
+     518:	9f 92       	push	r9
+     51a:	af 92       	push	r10
+     51c:	bf 92       	push	r11
+     51e:	cf 92       	push	r12
+     520:	df 92       	push	r13
+     522:	ef 92       	push	r14
+     524:	ff 92       	push	r15
+     526:	0f 93       	push	r16
+     528:	1f 93       	push	r17
+     52a:	cf 93       	push	r28
+     52c:	df 93       	push	r29
+     52e:	00 d0       	rcall	.+0      	; 0x530 <_Z12charToStringPcs+0x18>
+     530:	00 d0       	rcall	.+0      	; 0x532 <_Z12charToStringPcs+0x1a>
+     532:	00 d0       	rcall	.+0      	; 0x534 <_Z12charToStringPcs+0x1c>
+     534:	cd b7       	in	r28, 0x3d	; 61
+     536:	de b7       	in	r29, 0x3e	; 62
+     538:	8c 01       	movw	r16, r24
+     53a:	6b 01       	movw	r12, r22
+     53c:	5a 01       	movw	r10, r20
+     53e:	67 e0       	ldi	r22, 0x07	; 7
+     540:	72 e0       	ldi	r23, 0x02	; 2
+     542:	0e 94 92 13 	call	0x2724	; 0x2724 <_ZN6StringC1EPKc>
+     546:	76 01       	movw	r14, r12
+     548:	c7 01       	movw	r24, r14
+     54a:	8c 19       	sub	r24, r12
+     54c:	9d 09       	sbc	r25, r13
+     54e:	8a 15       	cp	r24, r10
+     550:	9b 05       	cpc	r25, r11
+     552:	b4 f4       	brge	.+44     	; 0x580 <_Z12charToStringPcs+0x68>
+     554:	f7 01       	movw	r30, r14
+     556:	91 90       	ld	r9, Z+
+     558:	7f 01       	movw	r14, r30
+     55a:	b8 01       	movw	r22, r16
+     55c:	ce 01       	movw	r24, r28
+     55e:	01 96       	adiw	r24, 0x01	; 1
+     560:	0e 94 fb 13 	call	0x27f6	; 0x27f6 <_ZN6StringC1ERKS_>
+     564:	69 2d       	mov	r22, r9
+     566:	ce 01       	movw	r24, r28
+     568:	01 96       	adiw	r24, 0x01	; 1
+     56a:	0e 94 51 14 	call	0x28a2	; 0x28a2 <_ZplRK15StringSumHelperc>
+     56e:	bc 01       	movw	r22, r24
+     570:	c8 01       	movw	r24, r16
+     572:	0e 94 e4 13 	call	0x27c8	; 0x27c8 <_ZN6StringaSERKS_>
+     576:	ce 01       	movw	r24, r28
+     578:	01 96       	adiw	r24, 0x01	; 1
+     57a:	0e 94 24 13 	call	0x2648	; 0x2648 <_ZN6StringD1Ev>
+     57e:	e4 cf       	rjmp	.-56     	; 0x548 <_Z12charToStringPcs+0x30>
+     580:	c8 01       	movw	r24, r16
+     582:	26 96       	adiw	r28, 0x06	; 6
+     584:	0f b6       	in	r0, 0x3f	; 63
+     586:	f8 94       	cli
+     588:	de bf       	out	0x3e, r29	; 62
+     58a:	0f be       	out	0x3f, r0	; 63
+     58c:	cd bf       	out	0x3d, r28	; 61
+     58e:	df 91       	pop	r29
+     590:	cf 91       	pop	r28
+     592:	1f 91       	pop	r17
+     594:	0f 91       	pop	r16
+     596:	ff 90       	pop	r15
+     598:	ef 90       	pop	r14
+     59a:	df 90       	pop	r13
+     59c:	cf 90       	pop	r12
+     59e:	bf 90       	pop	r11
+     5a0:	af 90       	pop	r10
+     5a2:	9f 90       	pop	r9
+     5a4:	08 95       	ret
 
 000005a6 <_Z9charToNumc>:
      5a6:	cf 93       	push	r28
@@ -2216,7 +2216,7 @@ void loop() {
     1292:	72 e0       	ldi	r23, 0x02	; 2
     1294:	ce 01       	movw	r24, r28
     1296:	07 96       	adiw	r24, 0x07	; 7
-    1298:	0e 94 25 02 	call	0x44a	; 0x44a <_Z12charToStringPcs>
+    1298:	0e 94 8c 02 	call	0x518	; 0x518 <_Z12charToStringPcs>
 		lcd.print("Dist Target:");
     129c:	69 eb       	ldi	r22, 0xB9	; 185
     129e:	71 e0       	ldi	r23, 0x01	; 1
@@ -2243,7 +2243,7 @@ void loop() {
     12c8:	72 e0       	ldi	r23, 0x02	; 2
     12ca:	ce 01       	movw	r24, r28
     12cc:	01 96       	adiw	r24, 0x01	; 1
-    12ce:	0e 94 25 02 	call	0x44a	; 0x44a <_Z12charToStringPcs>
+    12ce:	0e 94 8c 02 	call	0x518	; 0x518 <_Z12charToStringPcs>
     12d2:	be 01       	movw	r22, r28
     12d4:	6f 5f       	subi	r22, 0xFF	; 255
     12d6:	7f 4f       	sbci	r23, 0xFF	; 255
@@ -2341,7 +2341,7 @@ void loop() {
     1370:	72 e0       	ldi	r23, 0x02	; 2
     1372:	ce 01       	movw	r24, r28
     1374:	07 96       	adiw	r24, 0x07	; 7
-    1376:	0e 94 25 02 	call	0x44a	; 0x44a <_Z12charToStringPcs>
+    1376:	0e 94 8c 02 	call	0x518	; 0x518 <_Z12charToStringPcs>
 		lcd.print("Num Drops:");
     137a:	61 ed       	ldi	r22, 0xD1	; 209
     137c:	71 e0       	ldi	r23, 0x01	; 1
@@ -2374,7 +2374,7 @@ void loop() {
     13b2:	72 e0       	ldi	r23, 0x02	; 2
     13b4:	ce 01       	movw	r24, r28
     13b6:	01 96       	adiw	r24, 0x01	; 1
-    13b8:	0e 94 25 02 	call	0x44a	; 0x44a <_Z12charToStringPcs>
+    13b8:	0e 94 8c 02 	call	0x518	; 0x518 <_Z12charToStringPcs>
     13bc:	be 01       	movw	r22, r28
     13be:	6f 5f       	subi	r22, 0xFF	; 255
     13c0:	7f 4f       	sbci	r23, 0xFF	; 255
@@ -4354,7 +4354,7 @@ int main(void)
 #endif
 	
 	setup();
-    2052:	0e 94 77 02 	call	0x4ee	; 0x4ee <setup>
+    2052:	0e 94 30 02 	call	0x460	; 0x460 <setup>
     
 	for (;;) {
 		loop();
